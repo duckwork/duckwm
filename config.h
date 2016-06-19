@@ -1,16 +1,19 @@
 /* See LICENSE file for copyright and license details. */
 
+#include "../theme.h"
+
 /* appearance */
 static const char *fonts[] = {
-	"monospace:size=10"
+	PANEL_FONT,
+	FONT
 };
-static const char dmenufont[]       = "monospace:size=10";
-static const char normbordercolor[] = "#444444";
-static const char normbgcolor[]     = "#222222";
-static const char normfgcolor[]     = "#bbbbbb";
-static const char selbordercolor[]  = "#005577";
-static const char selbgcolor[]      = "#005577";
-static const char selfgcolor[]      = "#eeeeee";
+static const char dmenufont[]       = PANEL_FONT;
+static const char normbordercolor[] = COLOR_BLACK;
+static const char normbgcolor[]     = COLOR_BLUE;
+static const char normfgcolor[]     = COLOR_GRAY2;
+static const char selbordercolor[]  = COLOR_BLUE;
+static const char selbgcolor[]      = COLOR_BLUE;
+static const char selfgcolor[]      = COLOR_WHITE;
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
