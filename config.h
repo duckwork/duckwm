@@ -4,15 +4,15 @@
 
 /* appearance */
 static const char *fonts[] = {
-	PANEL_FONT
+	PANEL_FONT,
 };
 static const char dmenufont[]       = PANEL_FONT;
 static const char normbordercolor[] = COLOR_BLACK;
-static const char normbgcolor[]     = COLOR_BLUE;
-static const char normfgcolor[]     = COLOR_GRAY2;
-static const char selbordercolor[]  = COLOR_BLUE;
+static const char normbgcolor[]     = COLOR_BLACK;
+static const char normfgcolor[]     = COLOR_WHITE;
+static const char selbordercolor[]  = COLOR_GREEN;
 static const char selbgcolor[]      = COLOR_BLACK;
-static const char selfgcolor[]      = COLOR_WHITE;
+static const char selfgcolor[]      = COLOR_GREEN;
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -38,8 +38,8 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "┬┬",      htile },    /* first entry is default */
-	{ "├─",      tile },
+	{ "TT",      htile },    /* first entry is default */
+	{ "|-",      tile },
 	{ "~~",      NULL },    /* no layout function means floating behavior */
 	{ "[]",      monocle },
 };

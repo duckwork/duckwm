@@ -723,10 +723,6 @@ drawbar(Monitor *m)
 	dx = (drw->fonts[0]->ascent + drw->fonts[0]->descent + 2) / 4;
 
 	x = 0;
-	w = blw = TEXTW(m->ltsymbol);
-	drw_setscheme(drw, &scheme[SchemeNorm]);
-	drw_text(drw, x, 0, w, bh, m->ltsymbol, 0);
-	x += w;
 
 	for (c = m->clients; c; c = c->next) {
 		occ |= c->tags;
@@ -745,6 +741,10 @@ drawbar(Monitor *m)
                  0, urg & 1 << i);
 		x += w;
 	}
+	w = blw = TEXTW(m->ltsymbol);
+	drw_setscheme(drw, &scheme[SchemeNorm]);
+	drw_text(drw, x, 0, w, bh, m->ltsymbol, 0);
+	x += w;
 	xx = x;
 	if (m == selmon) { /* status is only drawn on selected monitor */
 		w = TEXTW(stext);
