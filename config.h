@@ -1,12 +1,12 @@
 /* See LICENSE file for copyright and license details. */
 
-#include "../theme.h"
+#include "/home/case/.config/colors/colors.h"
 
 /* appearance */
 static const char *fonts[] = {
-	PANEL_FONT,
+	"Terminus:pixelsize=10",
 };
-static const char dmenufont[]       = PANEL_FONT;
+static const char dmenufont[]       = "Terminus:pixelsize=10";
 static const char normbordercolor[] = COLOR_BLACK;
 static const char normbgcolor[]     = COLOR_BLACK;
 static const char normfgcolor[]     = COLOR_WHITE;
